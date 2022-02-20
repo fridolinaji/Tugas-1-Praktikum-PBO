@@ -1,0 +1,28 @@
+package tugas1;
+
+/**
+ *
+ * @author ASUS
+ */
+public class Konversi {
+    int reamur, fahreinheit;
+    float kelvin;
+    void hasil(int celcius){
+        reamur = (celcius*4)/5;
+        fahreinheit = (celcius*9)/5+32;
+        kelvin = (float) (celcius+273.15);
+        System.out.println("Suhu Dalam Celcius:" +celcius);
+        System.out.println("Suhu Dalam Reamur:" +reamur);
+        System.out.println("Suhu Dalam Fahreinheit:" +fahreinheit);
+        System.out.println("Suhu Dalam Kelvin:" +kelvin);
+        
+        if(celcius <= 0){
+            System.out.println("Kondisi Air Beku");
+        }else if(celcius > 0 && celcius < 100){
+            System.out.println("Kondisi Air Normal");
+        }else{
+            System.out.println("Kondisi Air Mendidih");
+        }
+      
+    }
+}
